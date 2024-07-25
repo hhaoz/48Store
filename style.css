@@ -1,0 +1,295 @@
+:root {
+    --primary-color: #0A2647;
+    --text-color: #3A3D45;
+    --text-on-bg: #F5F5F5;
+    --border-color: #464646;
+}
+
+.material-symbols-outlined.call {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/* nav */
+.nav {
+    width: 100%;
+    height: 95px;
+    background-color: var(--primary-color);
+    color: var(--text-on-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+}
+
+/* nav left */
+.nav .left {
+    width: 35%;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 40px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.nav a{
+    color: var(--text-on-bg);
+}
+
+/* nav right */
+.nav .right {
+    width: 50%;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav .search {
+    width: 65%;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 92%;
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+}
+
+.search-input::placeholder {
+    font-size: 14px;
+}
+
+.search-icon {
+    color: var(--primary-color);
+    width: 8%;
+}
+
+/* container */
+/* best seller */
+.best-seller {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    color: var(--text-color);
+    margin-top: 24px;
+}
+    
+.best-seller .list {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+    color: var(--text-color);
+    margin: 20px 0;
+}
+
+.best-seller .list li {
+    width: 148px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+.best-seller .list li:first-child {
+    background-color: var(--primary-color);
+    color: var(--text-on-bg);
+    border-radius: 8px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 42px;
+    width: 90%;
+}
+
+.best-seller img {
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-item {
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item .price {
+    font-weight: 600;
+}
+
+.product-item .color {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background-color: #B0B48F;
+    border: 1px solid #B2B2B2;
+}
+
+.circle2 {
+    background-color: #B5B9C4;
+}
+
+.circle3 {
+    background-color: #282F4B;
+}
+
+.circle4 {
+    background-color: #862431;
+}
+
+.circle5 {
+    background-color: #87B6F7;
+}
+
+.circle6 {
+    background-color: #E4B3C2;
+}
+
+.circle7 {
+    background-color: #044C42;
+}
+
+.circle8 {
+    background-color: #1A1A1A;
+}
+
+.circle9 {
+    background-color: #FBFBFD;
+    border: 1px solid #B2B2B2;
+}
+
+.circle10 {
+    background-color: #B3A2B2;
+}
+
+.circle11 {
+    background-color: #C5987C;
+}
+
+.circle12 {
+    background-color: #677983;
+}
+
+.circle13 {
+    background-color: #C7C4AF;
+}
+
+.circle14 {
+    background-color: #185443;
+}
+
+.circle15 {
+    background-color: #EEEBDC;
+}
+
+
+/* footer */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-color: var(--primary-color);
+    color: var(--text-on-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 42px;
+    padding: 0 35px;
+}
+
+.footer .logo {
+    height: 60px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.hotline>p {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.info p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.material-symbols-outlined.scroll-to-head {
+    font-size: 40px;
+}
+
+.scroll-to-head {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: var(--text-on-bg);
+    cursor: pointer;
+}
